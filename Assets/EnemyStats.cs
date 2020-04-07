@@ -18,8 +18,11 @@ public class EnemyStats : MonoBehaviour
     }
 
     public void TakeDamage(int damage, int shieldDamage)
-    {
-        if(currentShield > 0)
+     {
+        Debug.Log("currentshield" + currentShield);
+        Debug.Log("currenthealth" + currentHealth);
+
+        if (currentShield > 0)
         {
             if(shieldDamage > 0)
             {
@@ -41,6 +44,7 @@ public class EnemyStats : MonoBehaviour
             }
         }
     }
+    
 
     void Die()
     {

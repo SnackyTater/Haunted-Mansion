@@ -12,13 +12,16 @@ public class Combat : MonoBehaviour
     //player attack stats
     public int AttackDamage = 40;
     public int shieldDamage = 100;
-    
+
+    private Animator animator;
+
     
     void Update()
     {
         if(Input.GetKeyDown("z"))
         {
             Attack();
+            
         }
     }
 
